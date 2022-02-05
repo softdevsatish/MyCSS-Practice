@@ -1,0 +1,119 @@
+body{
+
+    background-image: url("../images/bg1.jpg");
+    background-position: center;
+    background-size: cover;
+    height: 100vh;
+    margin: 0 5%;
+}
+
+nav{
+    display: flex;
+    flex-direction: row;
+    height: 20vh;
+}
+.menu-link{
+    color: #fff;
+    text-decoration: none;
+    font-size: 25px;
+}
+
+.nav-bar{
+    display: none;
+}
+
+.main-menu{
+    flex:2;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    list-style-type: none;
+
+
+}
+
+.brand-logo{
+    flex: 1;
+    margin: auto;
+}
+.nav-logo{
+    display: block;
+}
+.brand-logo img{
+    height: 120px;
+}
+.nav-button{
+    background-color:#cc5306;
+    border: none;
+    padding: 5px 40px;
+    border-radius: 10px;
+    cursor: pointer;
+}
+.container{
+    display: flex;
+    flex-direction: row;
+    flex:1;
+    height: 80vh;
+}
+.col{
+    display: flex;
+    flex: 0.5;
+    min-height: 100%;
+}
+.col-right{
+    overflow: hidden;
+}
+.app-device{
+    position: absolute;
+    bottom: 0;
+    right:100px;
+    height:80%;
+}
+.playstore{
+    height:90px;
+}
+.col-left{
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    color:white;
+    margin: 0px 100px;
+}
+
+.col-left h1{
+    font-size: 47px;
+    margin: 20px 0px;
+}
+
+@media screen and (max-width:900px){
+    .app-device{
+        width: 50%;
+    }
+    .main-menu {
+       display: none;
+    }
+    .nav-bar{
+        display: block;
+        margin: auto;
+    }
+    .nav-bar i{
+        color: white;
+        font-size: 30px;
+    }
+    .col-left h1{
+        font-size: 25px;
+    }
+}
+
+@media screen and (max-width:660px){
+    .app-device{
+        display: none;
+    }
+    .col-left h1{
+        font-size:80px;
+    }
+
+    .playstore{
+        height:150px;
+    }
+}
